@@ -1,0 +1,34 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.multi-select {
+  border: 1px solid #9e9e9e;
+  border-radius: 5px !important;
+}
+
+.dropdown-heading {
+  background: #fff !important;
+  cursor: pointer !important;
+  color: #9e9e9e !important;
+  border: none !important;
+  border-radius: 0px !important;
+  font-family: "helvetica" !important;
+}
+
+.dropdown-heading .dropdown-heading-value span {
+  color: #9e9e9e !important;
+  font-family: "helvetica" !important;
+}
+
+.dropdown-heading:hover,
+.dropdown-heading:hover .dropdown-heading-value span {
+  background: #fff !important;
+  color: #4e4e4e !important;
+}
+
+.select-item .item-renderer span {
+  font-family: "helvetica" !important;
+}
+
