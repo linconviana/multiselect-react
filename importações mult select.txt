@@ -4,3 +4,8 @@ yarn add @khanacademy/react-multi-select
 *************************************************
 
 yarn add multiselect-react-dropdown
+
+***************************************************
+
+yarn add react-select
+
