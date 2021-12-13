@@ -5,7 +5,16 @@ import { Multiselect } from "multiselect-react-dropdown";
 const options = [
   { name: "Srigar", id: 1 },
   { name: "Sam", id: 2 },
-  { name: "adam", id: 3 }
+  { name: "adam", id: 3 },
+  { name: "Srigar2", id: 4 },
+  { name: "Sam2", id: 5 },
+  { name: "adam3", id: 6 },
+  { name: "Srigar4", id: 7 },
+  { name: "Sam4", id: 8 },
+  { name: "adam4", id: 9 },
+  { name: "Srigar5", id: 10 },
+  { name: "Sam5", id: 11 },
+  { name: "adam5", id: 12 }
 ];
 
 export default function SelectMulti() {
@@ -38,6 +47,11 @@ export default function SelectMulti() {
           placeholder='Selecione sua empresa'
           showArrow={true}
           showCheckbox={true}
+          selectedList={true}
+          avoidHighlightFirstOption={-1}
+          emptyRecordMsg="Empresa não encontrada"
+          selectedValues={[]}
+          
         />
         <button type="submit">Submit</button>
       </form>

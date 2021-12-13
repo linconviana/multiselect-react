@@ -38,6 +38,7 @@ export default function SelectSimples() {
           placeholder='Selecione sua empresa'
           showArrow={true}
           singleSelect={true}
+          avoidHighlightFirstOption={-1}
         />
         <button type="submit">Submit</button>
       </form>
