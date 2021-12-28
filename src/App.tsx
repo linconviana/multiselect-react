@@ -6,6 +6,8 @@ import SelectSimples from './components/MultiSelect2/selectSimples';
 import { MultiSelect3 } from './components/MultiSelect3/MultiSelect3';
 import { useState } from 'react';
 import MySelect from './components/MultiSelect4/MySelect';
+import Select from 'react-select/dist/declarations/src/Select';
+import { SelectBusca } from './components/Select/SelectBusca';
 
 function App() {
 
@@ -29,10 +31,22 @@ function App() {
     debugger
     let teste = selected.map((x: any) => x.value);
     debugger
-
   }
+
+  const GetSelectId = (id: any) => {
+
+    let currentId = id;
+    debugger
+  }
+
   return (
     <>
+
+      <div style={{margin:'100px'}}>
+        {/*https://react-select.com/home#getting-started */}
+        <SelectBusca options={options} GetSelectId={GetSelectId}/>
+      </div>
+
       <div style={{margin:'100px'}}>
 
         {/* https://codesandbox.io/s/multiselect-react-forked-flci6?file=/src/styles.css:0-1127 */}
