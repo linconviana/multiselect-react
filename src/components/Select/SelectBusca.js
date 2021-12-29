@@ -7,16 +7,22 @@ export const SelectBusca = props => {
   const onChange = (newValue) => {
 
     debugger
-    let id = newValue.value;
-    debugger
-    props.GetSelectId(id);
+    if(newValue !== null){
+      let id = newValue.value;
+      debugger
+      props.GetSelectId(id);
+    }
     
   };
 
   return (
     <Select 
+      className="basic-single"
+      classNamePrefix="select"
       options={getOptions()}
       onChange={onChange}
+      isClearable={true}
+      placeholder='Selecione sua empresa'
     />
   );
 };

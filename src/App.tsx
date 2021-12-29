@@ -43,7 +43,8 @@ function App() {
     <>
 
       <div style={{margin:'100px'}}>
-        {/*https://react-select.com/home#getting-started */}
+        {/*https://react-select.com/home#getting-started 
+        https://codesandbox.io/s/8lwg4?module=/example.tsx&file=/example.tsx:1527-1546*/}
         <SelectBusca options={options} GetSelectId={GetSelectId}/>
       </div>
 
