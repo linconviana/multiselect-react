@@ -6,7 +6,6 @@ import SelectSimples from './components/MultiSelect2/selectSimples';
 import { MultiSelect3 } from './components/MultiSelect3/MultiSelect3';
 import { useState } from 'react';
 import MySelect from './components/MultiSelect4/MySelect';
-import Select from 'react-select/dist/declarations/src/Select';
 import { SelectBusca } from './components/Select/SelectBusca';
 
 function App() {
@@ -24,7 +23,14 @@ function App() {
     { key: "2", value: "2", label: "Laura" },
     { key: "3", value: "3", label: "Tommy" },
     { key: "4", value: "4", label: "Jane" },
-    { key: "5", value: "5", label: "Mike" }
+    { key: "5", value: "5", label: "Mike" },
+    { key: "6", value: "6", label: "Carlos" },
+    { key: "7", value: "7", label: "Maria" },
+    { key: "8", value: "8", label: "Lucas" },
+    { key: "9", value: "9", label: "Ricardo" },
+    { key: "10", value: "10", label: "Lincon" },
+    { key: "11", value: "11", label: "Miriã" },
+    { key: "12", value: "12", label: "Heitor" }
   ];
   
   const testeArray = () => {

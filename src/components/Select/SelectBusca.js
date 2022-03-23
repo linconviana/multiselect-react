@@ -1,16 +1,32 @@
 import Select from 'react-select'
 
 export const SelectBusca = props => {
-  
+
+  let index = -1;
   const getOptions = () => [...props.options];
+
+  /// :: Verificar se existe index armazenado no localStorage
+  if(localStorage.length > 0){
+
+    let obj = props.options.find(x => x.value === localStorage.getItem('value'));
+    index = parseInt(obj.value);
+  }
   
+  /// :: Mudar valor do select
   const onChange = (newValue) => {
 
-    debugger
+    /// :: Verificar foi escolhido algum item do select.
     if(newValue !== null){
-      let id = newValue.value;
-      debugger
-      props.GetSelectId(id);
+
+      /// :: Armazenar index do select no localStorage
+      localStorage.setItem('value', newValue.value);
+
+      /// :: Retornar valor para pagina principal
+      props.GetSelectId(newValue.value);
+    }
+    else{
+      /// :: Remover index do select no localStorage ao desmarcar opção
+      localStorage.removeItem('value');
     }
     
   };
@@ -22,7 +38,8 @@ export const SelectBusca = props => {
       options={getOptions()}
       onChange={onChange}
       isClearable={true}
-      placeholder='Selecione sua empresa'
+      defaultValue={props.options[index-1]}
+      placeholder='Selecione o item ou digite para buscar'
     />
   );
 };
